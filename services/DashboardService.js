@@ -1,12 +1,15 @@
 const log4js = require( "log4js" );
 const logger = log4js.getLogger();
-const DashboardDao = require( '../dao/DashboardDao' );
+
 const Accounts = require( '../models/Accounts' );
 const Devices = require( '../models/Devices' );
 const DateData = require( '../models/DateData' );
 const Data = require( '../models/Data' );
-const DashboardFunctions = require( '../modules/DashboardModules' );
 
+const DashboardFunctions = require( '../modules/DashboardModules' );
+const DashboardDao = require( '../dao/DashboardDao' );
+
+// Refactoring Constants
 const DEVICE_ID_IS_EMPTY = 'Device ID is Empty';
 const DATE_IS_EMPTY = 'Date is Empty';
 const TIME_IS_EMPTY = 'Time is Empty';

@@ -1,10 +1,12 @@
 const log4js = require( "log4js" );
 const logger = log4js.getLogger();
 const firebase = require( '../config/FirebaseDbUtil' );
+
 const accountsConstants = require( '../constants/AccountsConstants' );
 const devicesConstants = require( '../constants/DevicesConstants' );
 const dateDataConstants = require( '../constants/DateDataConstants' );
 //const Crypto = require('../config/EncryptDecryptUtil');
+
 const Accounts = require( '../models/Accounts' );
 const Devices = require( '../models/Devices' );
 const DateData = require( '../models/DateData' );
@@ -14,6 +16,7 @@ logger.level = 'info';
 
 const database = firebase.database();
 
+// Refactoring Constants
 const DATABASE_INSERTION_OPERATION_FAILED = 'Database Insertion Operation Failed';
 const DATA_ADDED_SUCCESSFULLY = 'Data Added Successfully';
 const DATABASE_RETRIEVAL_OPERATION_FAILED = 'Database Retrieval Operation Failed';

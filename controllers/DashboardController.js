@@ -2,11 +2,12 @@ const express = require('express')
 const router = express.Router()
 const bodyParser = require('body-parser')
 const cors = require('cors')
-const DashboardDTO = require('../dto/DashboardDTO')
-const DashboardService = require('../services/DashboardService')
 const log4js = require('log4js')
 const logger = log4js.getLogger()
 const date = new Date()
+
+const DashboardDTO = require('../dto/DashboardDTO')
+const DashboardService = require('../services/DashboardService')
 
 logger.level = 'info'
 
